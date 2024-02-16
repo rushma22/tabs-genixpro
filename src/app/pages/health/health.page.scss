@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+
+ion-header{
+   
+    ion-toolbar{
+        --background: var(--ion-color-primary);
+        --color:var(--ion-color-primary-contrast);
+        ion-icon{
+            font-size: 25px;
+            margin-right: 10px;
+        }
+
+        ion-title{
+            font-weight: 800;
+            font-size: 15px;
+            font-family: 'Nunito', sans-serif;
+        }
+    }
+}
+
+ion-content{
+    .pressure{
+       display: flex;
+       padding: 5px 30px 10px 30px;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    .full-box{
+        height: 30vh;
+    }
+
+    .oxygen{
+        display: flex;
+        padding:10px 0 5px 10px;
+        font-size: 10px;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        img{
+            height: 50px;
+        }
+
+        .oxygen-bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 5px;
+
+          
+
+            ion-button{
+                font-size: 10px;
+                --padding-start:10px;
+                --padding-end:10px;
+            }
+        }
+    }
+}
+
+ion-card{
+    ion-card-content{
+        display: flex;
+        .image-part{
+
+            margin-right: 20px;
+            img{
+            height: 85px;
+            }
+           
+        }
+
+        .text-part{
+            .long-text{
+                ion-text{
+                    font-weight: bold;
+                    color: black;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.topic{
+    font-weight: bold;
+}

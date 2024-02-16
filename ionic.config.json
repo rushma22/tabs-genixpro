@@ -1,0 +1,7 @@
+{
+  "name": "tabs-genixpro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

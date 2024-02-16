@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+
+ion-header{
+   
+    ion-toolbar{
+        --background: var(--ion-color-primary);
+        --color:var(--ion-color-primary-contrast);
+        ion-icon{
+            font-size: 25px;
+            margin-right: 10px;
+        }
+
+        ion-title{
+            font-weight: 800;
+            font-size: 15px;
+            font-family: 'Nunito', sans-serif;
+        }
+    }
+}
+
+ion-card-content{
+    font-size: 10px;
+
+    ion-button{
+        font-size: 10px;
+        text-transform: none;
+    }
+}
+.topic{
+    font-weight: bold;
+}

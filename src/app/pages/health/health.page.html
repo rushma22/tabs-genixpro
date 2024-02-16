@@ -1,0 +1,87 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar class="ion-padding-start">
+    <ion-icon name="menu-outline" slot="start"></ion-icon>
+    <ion-title class="ion-text-center">Health Snapshot</ion-title>
+    <ion-icon name="notifications-outline" slot="end"></ion-icon>
+    <ion-icon name="person-circle-outline" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+<div class="dashboard">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="9">
+        <ion-text class="topic">Dashboard</ion-text>
+      </ion-col>
+      <ion-col size="3">
+        <ion-text class="ion-text-end" color="primary">See all</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <div class="pressure">
+          <img src="assets/images/pressure.png" alt="">
+          <ion-text class="ion-text-center ion-margin-bottom">Blood Pressure (mmHg)</ion-text>
+          <ion-button size="small">
+            Measure
+          </ion-button>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="full-box">
+        <ion-row class="ion-margin-bottom">
+        <div class="oxygen">
+          <img src="assets/images/oxygen.png" alt="">
+          <div class="oxygen-bottom">
+            <ion-text  class="ion-text-center ion-margin-bottom">Oxygen Conc. (SpO %)</ion-text>
+          <ion-button size="small"  class="ion-no-padding">
+            Measure
+          </ion-button>
+          </div>
+          
+        </div>
+      </ion-row>
+        <ion-row> 
+          <div class="oxygen">
+          <img src="assets/images/temp.png" alt="">
+          <div class="oxygen-bottom">
+            <ion-text class="ion-text-center  ion-margin-bottom">Body Temperature</ion-text>
+          <ion-button size="small" class="ion-no-padding">
+            Measure
+          </ion-button>
+          </div>
+          
+        </div>
+      </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+<div class="recommended">
+  <ion-row>
+    <ion-col size="9" class="topic">Recommended for you</ion-col>
+    <ion-col size="3">
+      <ion-text class="ion-text-end" color="primary">See all</ion-text></ion-col>
+  </ion-row>
+</div>
+  <ion-card *ngFor="let item of items">
+    <ion-card-content>
+      <div class="image-part">
+        <img src="https://ionicframework.com/docs/img/demos/thumbnail.svg" alt="">
+      </div>
+
+      <div class="text-part">
+        <ion-text color="primary">Physical Wellness</ion-text>
+        <div class="long-text">
+        <ion-text>The Therapeutic Power of Cleaning</ion-text>
+        <div>
+          <ion-note>7 min read</ion-note>
+        </div>
+        
+        </div>
+        
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
